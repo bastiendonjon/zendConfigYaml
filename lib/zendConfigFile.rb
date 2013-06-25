@@ -8,11 +8,18 @@ class ::Hash
     end
 end
 
-# Loading file and parse yaml file
-def load(fileFath, section)
+# Loading and parse yaml file
+#
+# Exemple:
+#   >> yml = ZendConfigYaml.load('configs/application.yml')
+#
+# Arguments:
+#   filePath: (string) path to yaml file
+#   section: (string) section name
+def load(filePath, section)
 
         # Load file and parsing
-        yml = YAML.load(File.new(fileFath, "r"))
+        yml = YAML.load(File.new(filePath, "r"))
 
         # Test if th section exist
         if yml.has_key?(section) == false
