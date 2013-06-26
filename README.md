@@ -9,8 +9,7 @@ Exemple:
   >> yml = ZendConfigYaml.load('configs/application.yml', 'development')
 
 Arguments:
-  filePath: (string) path to yaml file
-  
+	filePath: (string) path to yaml file
   section: (string) section name for get values
   
 Result:
