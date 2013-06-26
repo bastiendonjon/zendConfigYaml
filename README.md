@@ -10,6 +10,7 @@ Exemple:
 
 Arguments:
   filePath: (string) path to yaml file
+  
   section: (string) section name for get values
   
 Result:
