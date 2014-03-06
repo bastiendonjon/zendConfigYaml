@@ -25,7 +25,7 @@ class ZendConfigYaml
 
             # Test if th section exist
             if yml.has_key?(section) == false
-                    raise "La section '#{section}' n'existe pas."
+                    raise "Section '#{section}' does not exist."
             end
 
             # Default value
